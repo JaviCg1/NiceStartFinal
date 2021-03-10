@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#670024">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="513dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-101dp"
+        android:layout_marginTop="373dp"
+        android:layout_marginBottom="-173dp"
+        android:contentDescription="@string/backimage_description"
+
+        android:scaleType="fitStart"
+        android:src="@drawable/golden_retriever2"
+        app:srcCompat="@drawable/golden_retriever2" />
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="281dp"
+        android:layout_height="204dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/ic_launcher33_foreground"
+        app:srcCompat="@drawable/ic_launcher33_foreground" />
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/title"-->
+    <!--style="@style/AuthTitle"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/subtitle"-->
+    <!--style="@style/AuthTitle"-->
+    <!--android:textSize="15sp"-->
+    <!--android:layout_below="@id/title"-->
+    <!--android:text="@string/slogan"-->
+    <!--android:layout_alignParentTop="false"-->
+    <!--android:layout_marginTop="0dp" />-->
+
+    <LinearLayout
+        android:id="@+id/keysLayout"
+        style="@style/AuthFieldContainer"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-20dp"
+        android:alpha="0.9">
+
+        <EditText
+            android:id="@+id/usernamefield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitle"
+            android:layout_alignParentLeft="true"
+            android:hint="@string/username_hint"
+            android:textColorHint="@color/light_grey"
+            android:textSize="17sp"
+            tools:focusable="false">
+
+            <requestFocus />
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/passwordfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/subtitle"
+            android:layout_alignParentLeft="true"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textColorHint="@color/light_grey"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/emailfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitle"
+            android:layout_alignParentLeft="true"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/light_grey"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonDivider"
+        style="@style/MYIV"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:src="@drawable/button_divider" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/keysLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="0dp"
+        android:layout_toLeftOf="@id/buttonDivider"
+        android:background="#E85049"
+        android:text="@string/signup_button_label"
+        android:textColor="@color/textColor"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/cancelbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/keysLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="1dp"
+
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@id/buttonDivider"
+        android:background="#E85049"
+        android:text="@string/cancel_button_label"
+        android:textColor="@color/textColor"
+        android:textSize="13sp" />
+</RelativeLayout>
