@@ -9,3 +9,7 @@
  ![](img/main.JPG)  
 ### Main2 Screen
   ![](img/main2.JPG)
+### Alert
+![](img/alert.png)
+### Expandable
+![](img/expandable.png)
